@@ -9,8 +9,11 @@ namespace WebApplication2.Data
 {
     public class PiezasYProvDbContext : DbContext
     {
-        public PiezasYProvDbContext() : base("ClinicaDbContext")
-        { }
+
+        public PiezasYProvDbContext():base("PiezasYProvDbContext")
+        {
+        }
+
         public DbSet<Piezas> Pieza { get; set; }
         public DbSet<Suministra> Suministra { get; set; }
         public DbSet<Proveedores> Proveedor { get; set; }

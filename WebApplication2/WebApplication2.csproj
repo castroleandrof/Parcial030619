@@ -122,9 +122,9 @@
     <Compile Include="Data\PiezasYProvDbContext.cs" />
     <Compile Include="Interfaces\IEntity.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
-    <Compile Include="Migrations\201906032215267_migration1.cs" />
-    <Compile Include="Migrations\201906032215267_migration1.Designer.cs">
-      <DependentUpon>201906032215267_migration1.cs</DependentUpon>
+    <Compile Include="Migrations\201906032340481_InitialCreate.cs" />
+    <Compile Include="Migrations\201906032340481_InitialCreate.Designer.cs">
+      <DependentUpon>201906032340481_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Piezas.cs" />
@@ -133,8 +133,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201906032215267_migration1.resx">
-      <DependentUpon>201906032215267_migration1.cs</DependentUpon>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201906032340481_InitialCreate.resx">
+      <DependentUpon>201906032340481_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
